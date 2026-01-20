@@ -1,11 +1,8 @@
-
-Android Camera2Basic Sample
+Camera2Basic-WithAI
 ===========================
 
-This sample demonstrates using the Camera2 API to capture a JPEG, DEPTH or RAW frame.
-Check the source code to see a simple example of how to display the camera preview
-and capture a still image using the default configuration with the selected pixel
-format.
+A horrible Android AI app that do Image recognization stuff that AI image recognization stuff
+I'm making this app only because it's a college homework.
 
 Introduction
 ------------
