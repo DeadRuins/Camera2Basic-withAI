@@ -1,14 +1,8 @@
 Camera2Basic-WithAI
 ===========================
-
-<<<<<<< HEAD
-A horrible Android AI app that do Image recognization stuff that AI image recognization stuff
-I'm making this app only because it's a college homework.
-=======
 A horrible Android AI app that do Image recognization stuff that AI image recognization stuff.
 I've made this app only because it's part of a college homework, and what a massive pain in the butt to making this.
 Even with decyphering English documentation, help of AIs, it took a few weeks to make this nonsense.
->>>>>>> f98739b (full upload of Camera2AI stuff)
 
 Introduction
 ------------
@@ -18,6 +12,8 @@ directly from the camera sensor that has not yet been converted into a format an
 colorspace typically used for displaying and storing images viewed by humans.  The
 [DngCreator][2] class is provided as part of the Camera2 API as a utility for saving
 RAW images as DNG files.
+
+This project incoporates that, but with androidx.activity:activity:1.7.0, androidx.activity:activity-compose:1.7.0 to load images, and Firebase and Gemini APIs to proccessing image recognization to do job for AI.
 
 This sample displays a live camera preview in a TextureView, and saves JPEG and DNG
 file for each image captured.
