@@ -1,8 +1,14 @@
 Camera2Basic-WithAI
 ===========================
 
+<<<<<<< HEAD
 A horrible Android AI app that do Image recognization stuff that AI image recognization stuff
 I'm making this app only because it's a college homework.
+=======
+A horrible Android AI app that do Image recognization stuff that AI image recognization stuff.
+I've made this app only because it's part of a college homework, and what a massive pain in the butt to making this.
+Even with decyphering English documentation, help of AIs, it took a few weeks to make this nonsense.
+>>>>>>> f98739b (full upload of Camera2AI stuff)
 
 Introduction
 ------------
