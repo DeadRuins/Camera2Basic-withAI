@@ -15,6 +15,8 @@ RAW images as DNG files.
 
 This project incoporates that, but with androidx.activity:activity:1.7.0, androidx.activity:activity-compose:1.7.0 to load images, and Firebase and Gemini APIs to proccessing image recognization to do job for AI.
 
+Note: I removed Camera2AI/app/google-services.json due to security concern. If you want to use that, fetch it and add it yourself by look up Firebase API stuff tutorial if you want to use this repository for your own needs.
+
 This sample displays a live camera preview in a TextureView, and saves JPEG and DNG
 file for each image captured.
 
@@ -26,6 +28,7 @@ Pre-requisites
 
 - Android SDK 29+
 - Android Studio 3.5+
+- Firebase API project pre-requisites in general (firebase.google.com/docs/ai-logic/get-started?platform=android)
 
 Screenshots
 -------------
