@@ -1,0 +1,301 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2020 The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~     https://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.android.example.camera2.basic"
+19    android:versionCode="1"
+20    android:versionName="1.0.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="23"
+24        android:targetSdkVersion="34" />
+25
+26    <!-- Permission declarations -->
+27    <uses-permission android:name="android.permission.CAMERA" />
+27-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:21:5-65
+27-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:21:22-62
+28
+29    <!-- A camera with (optional) RAW capability is required to use this application -->
+30    <uses-feature android:name="android.hardware.camera.any" />
+30-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:24:5-64
+30-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:24:19-61
+31    <uses-feature
+31-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:25:5-89
+32        android:name="android.hardware.camera.raw"
+32-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:25:19-61
+33        android:required="false" />
+33-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:25:62-86
+34
+35    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+36    <!-- <uses-sdk android:minSdkVersion="21"/> -->
+37    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+37-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:22:5-79
+37-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:22:22-76
+38    <uses-permission android:name="android.permission.INTERNET" />
+38-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:23:5-67
+38-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:23:22-64
+39    <uses-permission android:name="android.permission.WAKE_LOCK" />
+39-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:25:5-68
+39-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:25:22-65
+40    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+40-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:26:5-110
+40-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:26:22-107
+41    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+41-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:25:5-79
+41-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:25:22-76
+42    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+42-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:26:5-88
+42-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:26:22-85
+43    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+43-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:27:5-82
+43-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:27:22-79
+44
+45    <permission
+45-->[androidx.core:core:1.13.1] /home/deadruins/.gradle/caches/8.13/transforms/6a490587b28e1d017ea413b10d6106b5/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+46        android:name="com.android.example.camera2.basic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.1] /home/deadruins/.gradle/caches/8.13/transforms/6a490587b28e1d017ea413b10d6106b5/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.1] /home/deadruins/.gradle/caches/8.13/transforms/6a490587b28e1d017ea413b10d6106b5/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.android.example.camera2.basic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.1] /home/deadruins/.gradle/caches/8.13/transforms/6a490587b28e1d017ea413b10d6106b5/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.1] /home/deadruins/.gradle/caches/8.13/transforms/6a490587b28e1d017ea413b10d6106b5/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:27:5-47:19
+52        android:allowBackup="true"
+52-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:28:9-35
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.13.1] /home/deadruins/.gradle/caches/8.13/transforms/6a490587b28e1d017ea413b10d6106b5/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:extractNativeLibs="false"
+56        android:fullBackupContent="true"
+56-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:29:9-41
+57        android:icon="@drawable/ic_launcher"
+57-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:31:9-45
+58        android:label="@string/app_name"
+58-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:30:9-41
+59        android:testOnly="true" >
+60        <activity
+60-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:34:9-46:20
+61            android:name="com.example.android.camera2.basic.CameraActivity"
+61-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:35:13-76
+62            android:clearTaskOnLaunch="true"
+62-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:36:13-45
+63            android:exported="true"
+63-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:38:13-36
+64            android:theme="@style/AppTheme" >
+64-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:37:13-44
+65
+66            <!-- Main app intent filter -->
+67            <intent-filter>
+67-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:41:13-44:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:42:17-69
+68-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:42:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:43:17-77
+70-->/home/deadruins/AndroidStudioProjects/Camera2AI/app/src/main/AndroidManifest.xml:43:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <service
+74-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:28:9-34:19
+75            android:name="com.google.firebase.components.ComponentDiscoveryService"
+75-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:29:13-84
+76            android:directBootAware="true"
+76-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:32:13-43
+77            android:exported="false" >
+77-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:30:13-37
+78            <meta-data
+78-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:31:13-33:85
+79                android:name="com.google.firebase.components:com.google.firebase.ai.FirebaseAIRegistrar"
+79-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:32:17-105
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-ai:17.8.0] /home/deadruins/.gradle/caches/8.13/transforms/c26a80e087efd7d2439ec2522832d7c7/transformed/jetified-firebase-ai-17.8.0/AndroidManifest.xml:33:17-82
+81            <meta-data
+81-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:33:13-35:85
+82                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+82-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:34:17-139
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.android.gms:play-services-measurement-api:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/cbc293919e7034be087cd354571e2a87/transformed/jetified-play-services-measurement-api-23.0.0/AndroidManifest.xml:35:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-installations:19.0.1] /home/deadruins/.gradle/caches/8.13/transforms/31509f320a13f4c8ca4314b0d5dc7b3e/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:15:13-17:85
+85                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+85-->[com.google.firebase:firebase-installations:19.0.1] /home/deadruins/.gradle/caches/8.13/transforms/31509f320a13f4c8ca4314b0d5dc7b3e/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:16:17-130
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-installations:19.0.1] /home/deadruins/.gradle/caches/8.13/transforms/31509f320a13f4c8ca4314b0d5dc7b3e/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:17:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-installations:19.0.1] /home/deadruins/.gradle/caches/8.13/transforms/31509f320a13f4c8ca4314b0d5dc7b3e/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:18:13-20:85
+88                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+88-->[com.google.firebase:firebase-installations:19.0.1] /home/deadruins/.gradle/caches/8.13/transforms/31509f320a13f4c8ca4314b0d5dc7b3e/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:19:17-127
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-installations:19.0.1] /home/deadruins/.gradle/caches/8.13/transforms/31509f320a13f4c8ca4314b0d5dc7b3e/transformed/jetified-firebase-installations-19.0.1/AndroidManifest.xml:20:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+91                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+91-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+93        </service>
+94
+95        <provider
+95-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+96            android:name="androidx.startup.InitializationProvider"
+96-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+97            android:authorities="com.android.example.camera2.basic.androidx-startup"
+97-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+98            android:exported="false" >
+98-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+99            <meta-data
+99-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+100-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+101                android:value="androidx.startup" />
+101-->[androidx.emoji2:emoji2:1.3.0] /home/deadruins/.gradle/caches/8.13/transforms/9952aeae8473f25f6feb14ef64117d08/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+102            <meta-data
+102-->[androidx.lifecycle:lifecycle-process:2.8.3] /home/deadruins/.gradle/caches/8.13/transforms/1ea678585281b2a0b137d44ddee1e00c/transformed/jetified-lifecycle-process-2.8.3/AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+103-->[androidx.lifecycle:lifecycle-process:2.8.3] /home/deadruins/.gradle/caches/8.13/transforms/1ea678585281b2a0b137d44ddee1e00c/transformed/jetified-lifecycle-process-2.8.3/AndroidManifest.xml:30:17-78
+104                android:value="androidx.startup" />
+104-->[androidx.lifecycle:lifecycle-process:2.8.3] /home/deadruins/.gradle/caches/8.13/transforms/1ea678585281b2a0b137d44ddee1e00c/transformed/jetified-lifecycle-process-2.8.3/AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+107                android:value="androidx.startup" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+108        </provider>
+109
+110        <receiver
+110-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:29:9-33:20
+111            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+111-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:30:13-85
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:31:13-35
+113            android:exported="false" >
+113-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:32:13-37
+114        </receiver>
+115
+116        <service
+116-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:35:9-38:40
+117            android:name="com.google.android.gms.measurement.AppMeasurementService"
+117-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:36:13-84
+118            android:enabled="true"
+118-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:37:13-35
+119            android:exported="false" />
+119-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:38:13-37
+120        <service
+120-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:39:9-43:72
+121            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+121-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:40:13-87
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:41:13-35
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:42:13-37
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[com.google.android.gms:play-services-measurement:23.0.0] /home/deadruins/.gradle/caches/8.13/transforms/1ba4e3f2963af3c9f1e9d6a55362efd9/transformed/jetified-play-services-measurement-23.0.0/AndroidManifest.xml:43:13-69
+125
+126        <provider
+126-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+127            android:name="com.google.firebase.provider.FirebaseInitProvider"
+127-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+128            android:authorities="com.android.example.camera2.basic.firebaseinitprovider"
+128-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+129            android:directBootAware="true"
+129-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+130            android:exported="false"
+130-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+131            android:initOrder="100" />
+131-->[com.google.firebase:firebase-common:22.0.1] /home/deadruins/.gradle/caches/8.13/transforms/d404786c15696aaf75aecff43c423021/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+132
+133        <uses-library
+133-->[androidx.window:window:1.0.0] /home/deadruins/.gradle/caches/8.13/transforms/d08ea6053d2d9dcb7d41ee226d21af90/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+134            android:name="androidx.window.extensions"
+134-->[androidx.window:window:1.0.0] /home/deadruins/.gradle/caches/8.13/transforms/d08ea6053d2d9dcb7d41ee226d21af90/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+135            android:required="false" />
+135-->[androidx.window:window:1.0.0] /home/deadruins/.gradle/caches/8.13/transforms/d08ea6053d2d9dcb7d41ee226d21af90/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+136        <uses-library
+136-->[androidx.window:window:1.0.0] /home/deadruins/.gradle/caches/8.13/transforms/d08ea6053d2d9dcb7d41ee226d21af90/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+137            android:name="androidx.window.sidecar"
+137-->[androidx.window:window:1.0.0] /home/deadruins/.gradle/caches/8.13/transforms/d08ea6053d2d9dcb7d41ee226d21af90/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+138            android:required="false" />
+138-->[androidx.window:window:1.0.0] /home/deadruins/.gradle/caches/8.13/transforms/d08ea6053d2d9dcb7d41ee226d21af90/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+139
+140        <receiver
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+141            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+142            android:directBootAware="false"
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+143            android:enabled="true"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+144            android:exported="true"
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+145            android:permission="android.permission.DUMP" >
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+147                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+150                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+153                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+154            </intent-filter>
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+156                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/deadruins/.gradle/caches/8.13/transforms/ec1619956be4ca37eeac860ca2b65594/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+157            </intent-filter>
+158        </receiver>
+159
+160        <uses-library
+160-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /home/deadruins/.gradle/caches/8.13/transforms/339961b7489fc095c596231cc3eef3c9/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:23:9-25:40
+161            android:name="android.ext.adservices"
+161-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /home/deadruins/.gradle/caches/8.13/transforms/339961b7489fc095c596231cc3eef3c9/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:24:13-50
+162            android:required="false" />
+162-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /home/deadruins/.gradle/caches/8.13/transforms/339961b7489fc095c596231cc3eef3c9/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:25:13-37
+163
+164        <activity
+164-->[com.google.android.gms:play-services-base:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/caf75d99f7d58795a3f71da142aa3386/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+165            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+165-->[com.google.android.gms:play-services-base:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/caf75d99f7d58795a3f71da142aa3386/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+166            android:exported="false"
+166-->[com.google.android.gms:play-services-base:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/caf75d99f7d58795a3f71da142aa3386/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+167            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+167-->[com.google.android.gms:play-services-base:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/caf75d99f7d58795a3f71da142aa3386/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+168
+169        <meta-data
+169-->[com.google.android.gms:play-services-basement:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/26719c3ad6539be7bebc36217a64e952/transformed/jetified-play-services-basement-18.5.0/AndroidManifest.xml:21:9-23:69
+170            android:name="com.google.android.gms.version"
+170-->[com.google.android.gms:play-services-basement:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/26719c3ad6539be7bebc36217a64e952/transformed/jetified-play-services-basement-18.5.0/AndroidManifest.xml:22:13-58
+171            android:value="@integer/google_play_services_version" />
+171-->[com.google.android.gms:play-services-basement:18.5.0] /home/deadruins/.gradle/caches/8.13/transforms/26719c3ad6539be7bebc36217a64e952/transformed/jetified-play-services-basement-18.5.0/AndroidManifest.xml:23:13-66
+172    </application>
+173
+174</manifest>

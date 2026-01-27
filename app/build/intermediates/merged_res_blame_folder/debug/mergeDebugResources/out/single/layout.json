@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.android.camera2.basic.app-mergeDebugResources-61:/layout/item_image_viewer.xml",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout/item_image_viewer.xml"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-mergeDebugResources-61:/layout/fragment_camera.xml",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout/fragment_camera.xml"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-mergeDebugResources-61:/layout/activity_camera.xml",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout/activity_camera.xml"
+    }
+]

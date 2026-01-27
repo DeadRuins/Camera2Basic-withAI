@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Camera2AI</string>
+    <string name="capture">Capture</string>
+    <string name="folders">Folders</string>
+    <string name="gcm_defaultSenderId" translatable="false">443694048757</string>
+    <string name="google_api_key" translatable="false">AIzaSyAZFQE4KkV0qKKkvTVkMK4Mz-SnuZgnStY</string>
+    <string name="google_app_id" translatable="false">1:443694048757:android:35ae6ab364d32e58cd6cbc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAZFQE4KkV0qKKkvTVkMK4Mz-SnuZgnStY</string>
+    <string name="google_storage_bucket" translatable="false">camera2basicai.firebasestorage.app</string>
+    <string name="project_id" translatable="false">camera2basicai</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:immersive">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

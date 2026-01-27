@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "443694048757",
+    "project_id": "camera2basicai",
+    "storage_bucket": "camera2basicai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443694048757:android:35ae6ab364d32e58cd6cbc",
+        "android_client_info": {
+          "package_name": "com.android.example.camera2.basic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZFQE4KkV0qKKkvTVkMK4Mz-SnuZgnStY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

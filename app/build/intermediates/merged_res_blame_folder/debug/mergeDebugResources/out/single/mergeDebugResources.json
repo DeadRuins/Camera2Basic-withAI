@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/layout-land_fragment_camera.xml.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout-land/fragment_camera.xml"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/drawable_ic_photo.xml.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/drawable/ic_photo.xml"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/layout_fragment_camera.xml.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout/fragment_camera.xml"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/layout_item_image_viewer.xml.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout/item_image_viewer.xml"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.android.camera2.basic.app-debug-62:/layout_activity_camera.xml.flat",
+        "source": "com.example.android.camera2.basic.app-main-64:/layout/activity_camera.xml"
+    }
+]
