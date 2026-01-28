@@ -25,8 +25,8 @@ file for each image captured.
 
 I tested app on...
 ------------
-Nothing Phone 3a (Android 16, Camera and File Manager worked)
-FiiO M15 (Android 7, File Manager worked)
+- Nothing Phone 3a (Android 16, Camera and File Manager worked)
+- FiiO M15 (Android 7, File Manager worked)
 
 
 Pre-requisites
