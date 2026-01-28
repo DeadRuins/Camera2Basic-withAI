@@ -23,6 +23,12 @@ file for each image captured.
 [1]: https://developer.android.com/reference/android/hardware/camera2/package-summary.html
 [2]: https://developer.android.com/reference/android/hardware/camera2/DngCreator.html
 
+I tested app on...
+------------
+Nothing Phone 3a (Android 16, Camera and File Manager worked)
+FiiO M15 (Android 7, File Manager worked)
+
+
 Pre-requisites
 --------------
 
